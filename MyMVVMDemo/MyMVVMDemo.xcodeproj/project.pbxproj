@@ -15,6 +15,12 @@
 		012424DD216B02CE0007818D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 012424DC216B02CE0007818D /* main.m */; };
 		012424E7216B02CF0007818D /* MyMVVMDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 012424E6216B02CF0007818D /* MyMVVMDemoTests.m */; };
 		012424F2216B02CF0007818D /* MyMVVMDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 012424F1216B02CF0007818D /* MyMVVMDemoUITests.m */; };
+		01242505216B03E20007818D /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 01242504216B03E20007818D /* Model.m */; };
+		01242508216B04000007818D /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01242507216B04000007818D /* ViewModel.m */; };
+		0124250C216B08AE0007818D /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124250B216B08AE0007818D /* TableViewDataSource.m */; };
+		0124250F216B092C0007818D /* TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0124250E216B092C0007818D /* TableViewDelegate.m */; };
+		01242512216B142F0007818D /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01242511216B142F0007818D /* MyTableViewCell.m */; };
+		E2A54407B5A146BF2C7A5C00 /* libPods-MyMVVMDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4797EFE8328656AACF780D0E /* libPods-MyMVVMDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,19 @@
 		012424ED216B02CF0007818D /* MyMVVMDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMVVMDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		012424F1216B02CF0007818D /* MyMVVMDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMVVMDemoUITests.m; sourceTree = "<group>"; };
 		012424F3216B02CF0007818D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01242503216B03E20007818D /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		01242504216B03E20007818D /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		01242506216B04000007818D /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		01242507216B04000007818D /* ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		0124250A216B08AE0007818D /* TableViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
+		0124250B216B08AE0007818D /* TableViewDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
+		0124250D216B092C0007818D /* TableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDelegate.h; sourceTree = "<group>"; };
+		0124250E216B092C0007818D /* TableViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDelegate.m; sourceTree = "<group>"; };
+		01242510216B142F0007818D /* MyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		01242511216B142F0007818D /* MyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
+		4797EFE8328656AACF780D0E /* libPods-MyMVVMDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyMVVMDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48622B6232D0620ED9450453 /* Pods-MyMVVMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMVVMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyMVVMDemo/Pods-MyMVVMDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A1A8E27E980AC9FDF530A153 /* Pods-MyMVVMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMVVMDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyMVVMDemo/Pods-MyMVVMDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A54407B5A146BF2C7A5C00 /* libPods-MyMVVMDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +105,8 @@
 				012424E5216B02CF0007818D /* MyMVVMDemoTests */,
 				012424F0216B02CF0007818D /* MyMVVMDemoUITests */,
 				012424CB216B02CC0007818D /* Products */,
+				65658584C6B38463634AF300 /* Pods */,
+				3FD4C16786EC822B5D812916 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +123,10 @@
 		012424CC216B02CC0007818D /* MyMVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				01242509216B081B0007818D /* View */,
+				01242502216B03AF0007818D /* Controller */,
+				01242501216B03A30007818D /* ViewModel */,
+				01242500216B03940007818D /* Model */,
 				012424FF216B02DC0007818D /* SuportingFiles */,
 				012424CD216B02CC0007818D /* AppDelegate.h */,
 				012424CE216B02CC0007818D /* AppDelegate.m */,
@@ -140,6 +166,61 @@
 			name = SuportingFiles;
 			sourceTree = "<group>";
 		};
+		01242500216B03940007818D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01242503216B03E20007818D /* Model.h */,
+				01242504216B03E20007818D /* Model.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		01242501216B03A30007818D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01242506216B04000007818D /* ViewModel.h */,
+				01242507216B04000007818D /* ViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		01242502216B03AF0007818D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0124250A216B08AE0007818D /* TableViewDataSource.h */,
+				0124250B216B08AE0007818D /* TableViewDataSource.m */,
+				0124250D216B092C0007818D /* TableViewDelegate.h */,
+				0124250E216B092C0007818D /* TableViewDelegate.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		01242509216B081B0007818D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01242510216B142F0007818D /* MyTableViewCell.h */,
+				01242511216B142F0007818D /* MyTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3FD4C16786EC822B5D812916 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4797EFE8328656AACF780D0E /* libPods-MyMVVMDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65658584C6B38463634AF300 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48622B6232D0620ED9450453 /* Pods-MyMVVMDemo.debug.xcconfig */,
+				A1A8E27E980AC9FDF530A153 /* Pods-MyMVVMDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 012424F6216B02CF0007818D /* Build configuration list for PBXNativeTarget "MyMVVMDemo" */;
 			buildPhases = (
+				254B1A0DDD08453AD912829A /* [CP] Check Pods Manifest.lock */,
 				012424C6216B02CC0007818D /* Sources */,
 				012424C7216B02CC0007818D /* Frameworks */,
 				012424C8216B02CC0007818D /* Resources */,
+				B168B640480119A6DFB5C277 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,14 +348,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		254B1A0DDD08453AD912829A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMVVMDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B168B640480119A6DFB5C277 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyMVVMDemo/Pods-MyMVVMDemo-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMVVMDemo/Pods-MyMVVMDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		012424C6216B02CC0007818D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0124250F216B092C0007818D /* TableViewDelegate.m in Sources */,
+				0124250C216B08AE0007818D /* TableViewDataSource.m in Sources */,
 				012424D2216B02CC0007818D /* ViewController.m in Sources */,
 				012424DD216B02CE0007818D /* main.m in Sources */,
+				01242508216B04000007818D /* ViewModel.m in Sources */,
+				01242512216B142F0007818D /* MyTableViewCell.m in Sources */,
 				012424CF216B02CC0007818D /* AppDelegate.m in Sources */,
+				01242505216B03E20007818D /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +576,7 @@
 		};
 		012424F7216B02CF0007818D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48622B6232D0620ED9450453 /* Pods-MyMVVMDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +594,7 @@
 		};
 		012424F8216B02CF0007818D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1A8E27E980AC9FDF530A153 /* Pods-MyMVVMDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

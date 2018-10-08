@@ -18,7 +18,7 @@
     TableViewDataSource *dataSource;
     ViewModel *viewModel;
     UITableView *tableView;
-    NSArray *data;
+    NSMutableArray *data;
 }
 
 @end
@@ -37,6 +37,8 @@
     tableView.delegate = delegate;
     
     tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshData)];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"edit" style:UIBarButtonItemStylePlain target:self action:@selector(tableViewEdit)];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -46,7 +48,7 @@
 
 - (void)refreshData {
     [viewModel headerReflashWithBlock:^(NSArray *arr) {
-        self->data = arr;
+        self->data = (NSMutableArray *)arr;
         self->dataSource.array = self->data;
         self->delegate.array = self->data;
         [self->tableView reloadData];
@@ -54,5 +56,14 @@
     }];
 }
 
+
+- (void)tableViewEdit {
+    tableView.editing = !tableView.editing;
+    if (tableView.editing) {
+        self.navigationItem.rightBarButtonItem.title = @"done";
+    } else {
+        self.navigationItem.rightBarButtonItem.title = @"edit";
+    }
+}
 
 @end

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TableViewDelegate : NSObject <UITableViewDelegate>
 
-@property (nonatomic, strong) NSArray *array;
+@property (nonatomic, strong) NSMutableArray *array;
 
 @end
 
